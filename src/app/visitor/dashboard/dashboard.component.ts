@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductModel } from 'src/app/_models/Products';
 import { MeiliSearch } from "meilisearch";
+import { AuthService } from '../../auth.service';
 import { environment } from "../../../environments/environment";
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +10,7 @@ import { environment } from "../../../environments/environment";
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authService: AuthService) { }
   //init for product models
   products: ProductModel[] = [];
   company_id: string = "d26d3690-bf54-481b-8f77-f5b0744e2fcd";

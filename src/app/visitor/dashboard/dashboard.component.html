@@ -1,5 +1,10 @@
-<div class="w-full grid grid-cols-3 gap-4">
-  <div *ngFor="let product of products">
-    <app-productcard [product]="product"></app-productcard>
+<div class="w-full">
+  <app-navbar></app-navbar>
+  <div class="mt-5 flex content-center justify-center w-full">
+    <div class="w-full grid grid-cols-3 gap-4">
+      <div *ngFor="let product of products">
+        <app-productcard [product]="product"></app-productcard>
+      </div>
+    </div>
   </div>
 </div>

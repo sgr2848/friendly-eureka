@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "vshop-28844": {
+      "hosting": {
+        "econ_app": [
+          "vshop-28844"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "vshop-28844"
+  }
+}

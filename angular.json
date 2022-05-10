@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "econ_app:build:production",
+            "firebaseProject": "vshop-28844",
+            "firebaseHostingSite": "vshop-28844"
+          }
         }
       }
     }
